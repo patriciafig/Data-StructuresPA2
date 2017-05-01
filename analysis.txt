@@ -1,0 +1,22 @@
+void get_set ( b1 , b2 ); //BESTCASE, WORSTCASE BOTH SAME AND BOTH IS O(N1+N2)where N1,N2 are size of set b1 and b2 respectively
+//the while loop runs for number of lines which is fixed(2setsb1andb2) 
+//and the inner while loop runs on the string stream to get the numbers in each set.
+printbag () //BEST AND WORST CASE IS SAME O(N)where N is size of the set.
+UNION OPERATION
+//the += operation is done on both the sets 
+//In += Copy operation will take O(N)time where N is size of RHS of += operator 
+//Hence the total time complexity is O(n1+n2) 
+//SAME FOR BEST AND WORST CASE,best case size is as small as possible,or O(1)if size of N1+N2 is greater than CAPACITY 
+// of the bag. 
+//worstcase:sizeaslargeaspossibleandstilllessthanCAPACITY.
+SUBTRACTIONOPERATION
+//For each element in BAG1 count is called.
+//For all elements with count >0 erase_one is called. 
+//in count function there is one loop which runs for all the elements in the BAG and restare constant time 
+expressions,complexityO(N) //in erase_onefunction loop runs for elements till the element is found,so best case 
+for erase_one isO(1),first element is the target 
+//and the worst case for erase_one is O(N),when the target is the last element in the set
+//NOW in SUBTRACTION OVERALL 
+//WORST CASE is when erase_one is called for every item,hence the complexity is O(N1*N2)as count and erase_one 
+one very element are equivalent to a nested loop. 
+//BEST CASE is when count is 0 for all, hence only count is called, the complexity is O(N1).
